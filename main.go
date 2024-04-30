@@ -28,4 +28,10 @@ func main() {
 		panic(err)
 	}
 	PrintToFileDAta(PATH, strData)
+
+	strDataemail, err := git.GetUserEmail()
+	if err != nil {
+		panic(err)
+	}
+	PrintToFileDAta(PATH, strDataemail)
 }
