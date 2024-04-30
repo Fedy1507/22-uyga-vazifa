@@ -17,7 +17,7 @@ func PrintToFileDAta(fileName string, data string) error {
 
 	cmd := exec.Command("git", "add", ".")
 	cmd.Output()
-	cmd := exec.Command("git", "commit", "-m", "appendUsers")
+	cmd = exec.Command("git", "commit", "-m", "appendUsers")
 	cmd.Output()
 	return nil
 }
